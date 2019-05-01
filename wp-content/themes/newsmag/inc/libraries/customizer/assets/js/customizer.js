@@ -60,8 +60,9 @@
 					$.each(widgetList, function ($k, $v) {
 						var individualId = $(this).attr('data-widget-id');
 						if ( individualId.search('newsmag_widget') == -1 ) {
-							$(this).hide();
-							search.attr('disabled', true);
+							//DARIO CHANGE disable those two so you get all widgets listed
+							//$(this).hide(); 
+							//search.attr('disabled', true);
 						}
 					});
 					break;
