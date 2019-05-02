@@ -62,12 +62,11 @@ class Newsmag_Sidebars {
 			/**
 			 * In the content area of the frontend page, we can only use builder widgets
 			 */
+			/* DARIO CHANGE ovdje se filtiraju widgeti koje mogu koristiti na frontpageu, ne želim to
 			if ( $widget_area === 'content-area' && ! empty( $widget_list ) ) {
 				foreach ( $widget_list as $pos => $widget_id ) {
 					if ( strpos( $widget_id, 'newsmag_widget_posts_' ) === false ) {
-						/**
-						 * Special case, banner widget
-						 */
+						// Special case, banner widget
 						if ( strpos( $widget_id, 'newsmag_banner' ) !== false ) {
 							continue;
 						}
@@ -75,7 +74,8 @@ class Newsmag_Sidebars {
 					}
 				}
 			}
-
+			*/
+		
 			/**
 			 * Footer sidebars
 			 */
